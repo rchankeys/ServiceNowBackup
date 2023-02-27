@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Request Type">fad6d2dd1b5de51071f38623604bcbd9</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-27 23:41:49</sys_created_on>
+        <sys_id>95589a111b9de51071f38623604bcb33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Exception from having PowerBroker installed</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>question_choice_95589a111b9de51071f38623604bcb33</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-27 23:41:49</sys_updated_on>
+        <text>Exception from having PowerBroker installed</text>
+        <value>exception_from_having_power_broker_installed</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=95589a111b9de51071f38623604bcb33"/>
+</record_update>
