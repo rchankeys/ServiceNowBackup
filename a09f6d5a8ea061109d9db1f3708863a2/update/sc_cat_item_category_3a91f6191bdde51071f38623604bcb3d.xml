@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Request Email Account and Configuration">963ee2551bdde51071f38623604bcb9c</sc_cat_item>
+        <sc_category display_value="Email">3a4d44331b01a11071f38623604bcb8e</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-28 01:32:14</sys_created_on>
+        <sys_id>3a91f6191bdde51071f38623604bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Email.Request Email Account and Configuration</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sc_cat_item_category_3a91f6191bdde51071f38623604bcb3d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-28 01:32:14</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Email Self Help Page - Container 2</name>
+        <order>2</order>
+        <sp_page display_value="email_self_help_page">6d2f8c821bd1211071f38623604bcb93</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-02 19:35:46</sys_created_on>
+        <sys_id>0ecc7c161b15611071f38623604bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Email Self Help Page - Container 2</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sp_container_0ecc7c161b15611071f38623604bcbc0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-02 19:35:46</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="test">a09f6d5a8ea061109d9db1f3708863a2</application>
+        <file_path/>
+        <instance_id>8c468a791bd76050c8432f8dee4bcb39</instance_id>
+        <instance_name>dev110199</instance_name>
+        <name>sp_container_0ecc7c161b15611071f38623604bcbc0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Email Self Help Page - Container 2</name><order>2</order><sp_page display_value="email_self_help_page">6d2f8c821bd1211071f38623604bcb93</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-02 19:35:46</sys_created_on><sys_id>0ecc7c161b15611071f38623604bcbc0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Email Self Help Page - Container 2</sys_name><sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package><sys_policy/><sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope><sys_update_name>sp_container_0ecc7c161b15611071f38623604bcbc0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-02 19:35:46</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>-216180884</payload_hash>
+        <record_name>Email Self Help Page - Container 2</record_name>
+        <reverted_from/>
+        <source>c4bf659a1ba0611071f38623604bcbf6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-02 19:35:46</sys_created_on>
+        <sys_id>8ecc70561b15611071f38623604bcb41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186a3d2cab40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-02 19:35:46</sys_updated_on>
+        <type>Container</type>
+        <update_guid>c6cc705645156110da5b14100ac92641</update_guid>
+        <update_guid_history>c6cc705645156110da5b14100ac92641:-216180884</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Email Self Help Page - Container 2">71fc70561b15611071f38623604bcbe7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-02 19:36:34</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>425005c3e3a84e6cbdcf0c7bf6cf44e4</sys_id>
+        <sys_metadata>0ecc7c161b15611071f38623604bcbc0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Email Self Help Page - Container 2</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_scope_delete display_value="">08b34a0a5d48448782ba6dc3e4b93701</sys_scope_delete>
+        <sys_update_name>sp_container_0ecc7c161b15611071f38623604bcbc0</sys_update_name>
+        <sys_update_version display_value="sp_container_0ecc7c161b15611071f38623604bcbc0">8ecc70561b15611071f38623604bcb41</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-02 19:36:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

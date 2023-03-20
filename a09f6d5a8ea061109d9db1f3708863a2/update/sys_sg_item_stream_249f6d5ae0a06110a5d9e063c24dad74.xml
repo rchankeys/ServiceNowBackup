@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream">
+    <sys_sg_item_stream action="INSERT_OR_UPDATE">
+        <data_item display_value="di_approvals_this_year">e09f6d5aa0a0611018f543977a7afc75</data_item>
+        <interleaved_field/>
+        <name>Approvals this year Item Stream</name>
+        <sys_class_name>sys_sg_item_stream</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-24 16:30:44</sys_created_on>
+        <sys_id>249f6d5ae0a06110a5d9e063c24dad74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approvals this year Item Stream</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sys_sg_item_stream_249f6d5ae0a06110a5d9e063c24dad74</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-24 16:30:44</sys_updated_on>
+        <table>x_968752_test_document_approver</table>
+    </sys_sg_item_stream>
+</record_update>

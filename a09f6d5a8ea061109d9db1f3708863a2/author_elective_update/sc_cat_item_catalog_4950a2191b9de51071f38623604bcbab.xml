@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Microsoft 365 Issue">99aa9e911b9de51071f38623604bcb94</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-28 00:16:46</sys_created_on>
+        <sys_id>4950a2191b9de51071f38623604bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Microsoft 365 Issue</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_4950a2191b9de51071f38623604bcbab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-28 00:16:46</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="test">a09f6d5a8ea061109d9db1f3708863a2</application>
+        <file_path/>
+        <instance_id>8c468a791bd76050c8432f8dee4bcb39</instance_id>
+        <instance_name>dev110199</instance_name>
+        <name>sc_cat_item_catalog_4950a2191b9de51071f38623604bcbab</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Microsoft 365 Issue">99aa9e911b9de51071f38623604bcb94</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-28 00:16:46</sys_created_on><sys_id>4950a2191b9de51071f38623604bcbab</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.Microsoft 365 Issue</sys_name><sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package><sys_policy/><sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope><sys_update_name>sc_cat_item_catalog_4950a2191b9de51071f38623604bcbab</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-28 00:16:46</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>1840738457</payload_hash>
+        <record_name>Service Catalog.Microsoft 365 Issue</record_name>
+        <reverted_from/>
+        <source>c4bf659a1ba0611071f38623604bcbf6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-28 00:16:46</sys_created_on>
+        <sys_id>4550a2191b9de51071f38623604bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1869560fa0e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-28 00:16:46</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>c950a219c89de510265531f6770eaead</update_guid>
+        <update_guid_history>c950a219c89de510265531f6770eaead:1840738457</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.Microsoft 365 Issue">f750e2191b9de51071f38623604bcb50</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-28 00:16:56</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>75ee2eaae7e9455a8cc0d8e2a306b124</sys_id>
+        <sys_metadata>4950a2191b9de51071f38623604bcbab</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Microsoft 365 Issue</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_parent display_value="Microsoft 365 Issue">99aa9e911b9de51071f38623604bcb94</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_scope_delete display_value="">08b34a0a5d48448782ba6dc3e4b93701</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_4950a2191b9de51071f38623604bcbab</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_4950a2191b9de51071f38623604bcbab">4550a2191b9de51071f38623604bcbae</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-28 00:16:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">ef208c7e1be0211071f38623604bcb16</sp_column>
+        <sp_widget display_value="Topic Header">10e99777c38830105a09f0ad9840ddbd</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-13 19:45:46</sys_created_on>
+        <sys_id>cf0cdd701b09e11071f38623604bcb0b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sp_instance_cf0cdd701b09e11071f38623604bcb0b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-13 19:47:09</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"include_description": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"primary_display": {
+		"value": "banner",
+		"displayValue": "Banner"
+	},
+	"secondary_display": {
+		"value": "text_only",
+		"displayValue": "Text Only"
+	},
+	"select_topics": {
+		"value": "06d3df67c3053010069aec4b7d40dd70",
+		"displayValue": "IT"
+	},
+	"banner_background_color": {
+		"value": "brand-primary",
+		"displayValue": "Brand Primary"
+	},
+	"banner_background_hexcode": {
+		"value": "",
+		"displayValue": ""
+	},
+	"banner_image_position": {
+		"value": "center center",
+		"displayValue": "Center Center"
+	},
+	"banner_image_display": {
+		"value": "cover",
+		"displayValue": "Scale to fit"
+	},
+	"banner_text_overlay_color": {
+		"value": "topic-header-gradient-dark",
+		"displayValue": "Overlay Dark"
+	},
+	"banner_text_overlay_transparency": {
+		"value": "0.5",
+		"displayValue": "0.5"
+	},
+	"icon_background_color": {
+		"value": "background-primary",
+		"displayValue": "Background Primary"
+	},
+	"icon_background_hexcode": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=cf0cdd701b09e11071f38623604bcb0b"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="test">a09f6d5a8ea061109d9db1f3708863a2</application>
+        <file_path/>
+        <instance_id>8c468a791bd76050c8432f8dee4bcb39</instance_id>
+        <instance_name>dev110199</instance_name>
+        <name>sp_instance_cf0cdd701b09e11071f38623604bcb0b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;2&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;ef208c7e1be0211071f38623604bcb16&lt;/sp_column&gt;&lt;sp_widget display_value="Topic Header"&gt;10e99777c38830105a09f0ad9840ddbd&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-02-13 19:45:46&lt;/sys_created_on&gt;&lt;sys_id&gt;cf0cdd701b09e11071f38623604bcb0b&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="test" source="x_968752_test"&gt;a09f6d5a8ea061109d9db1f3708863a2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="test"&gt;a09f6d5a8ea061109d9db1f3708863a2&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_cf0cdd701b09e11071f38623604bcb0b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-02-13 19:47:09&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"include_description": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"primary_display": {
+		"value": "banner",
+		"displayValue": "Banner"
+	},
+	"secondary_display": {
+		"value": "text_only",
+		"displayValue": "Text Only"
+	},
+	"select_topics": {
+		"value": "06d3df67c3053010069aec4b7d40dd70",
+		"displayValue": "IT"
+	},
+	"banner_background_color": {
+		"value": "brand-primary",
+		"displayValue": "Brand Primary"
+	},
+	"banner_background_hexcode": {
+		"value": "",
+		"displayValue": ""
+	},
+	"banner_image_position": {
+		"value": "center center",
+		"displayValue": "Center Center"
+	},
+	"banner_image_display": {
+		"value": "cover",
+		"displayValue": "Scale to fit"
+	},
+	"banner_text_overlay_color": {
+		"value": "topic-header-gradient-dark",
+		"displayValue": "Overlay Dark"
+	},
+	"banner_text_overlay_transparency": {
+		"value": "0.5",
+		"displayValue": "0.5"
+	},
+	"icon_background_color": {
+		"value": "background-primary",
+		"displayValue": "Background Primary"
+	},
+	"icon_background_hexcode": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=cf0cdd701b09e11071f38623604bcb0b"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-972679839</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>c4bf659a1ba0611071f38623604bcbf6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-13 19:47:10</sys_created_on>
+        <sys_id>6f5c55b01b09e11071f38623604bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1864c511e3c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-13 19:47:10</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>6b5c1d70e109e110f2c8778bc4f117ba</update_guid>
+        <update_guid_history>6b5c1d70e109e110f2c8778bc4f117ba:-972679839,853c1d700609e110bac1a5dd307795b2:1330244512,d70cdd706709e11077f2cffd516c720d:-2136880044</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">306c95b01b09e11071f38623604bcb5c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-13 19:47:15</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>0383913baab14e0d80468a30e67a5341</sys_id>
+        <sys_metadata>cf0cdd701b09e11071f38623604bcb0b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_scope_delete display_value="">08b34a0a5d48448782ba6dc3e4b93701</sys_scope_delete>
+        <sys_update_name>sp_instance_cf0cdd701b09e11071f38623604bcb0b</sys_update_name>
+        <sys_update_version display_value="sp_instance_cf0cdd701b09e11071f38623604bcb0b">6f5c55b01b09e11071f38623604bcbd0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-13 19:47:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

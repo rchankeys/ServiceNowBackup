@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_chart">
+    <sys_sg_chart action="INSERT_OR_UPDATE">
+        <jump_to_screen display_value="Navigate to document approvals this month">a09f6d5a28a061103d55ae62907a1d76</jump_to_screen>
+        <name>Approvals This Month</name>
+        <report display_value="Approvals This Month">ac9f6d5a4da06110942919f7377c537b</report>
+        <sys_class_name>sys_sg_chart</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-24 16:30:41</sys_created_on>
+        <sys_id>e49f6d5ab9a0611057608c522877e375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approvals This Month</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sys_sg_chart_e49f6d5ab9a0611057608c522877e375</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-24 16:30:41</sys_updated_on>
+        <title/>
+        <type>report</type>
+        <widget/>
+    </sys_sg_chart>
+</record_update>

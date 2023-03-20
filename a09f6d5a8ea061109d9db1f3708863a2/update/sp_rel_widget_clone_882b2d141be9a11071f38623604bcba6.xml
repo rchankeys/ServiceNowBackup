@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="Email Knowledge Articles">8c2b2d141be9a11071f38623604bcba3</child>
+        <cloned>2023-03-09 04:06:04</cloned>
+        <last_validated>2023-03-09 04:06:04</last_validated>
+        <parent display_value="Knowledge Featured Articles">ba8d45ffdb50320099f93691f0b8f51b</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category/&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+	/* widget controller */
+	var c = this;
+	c.template = "kb_article_list_template";
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;title,color,glyph,css&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;kb-featured-articles&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Knowledge Featured Articles&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Knowledge","name":"table","default_value":"kb_knowledge","label":"Table","type":"choice","choices":[{"label":"Knowledge","value":"kb_knowledge"}]},{"hint":"Display Field","name":"display_field","default_value":"short_description","label":"Display Field","type":"field_name"},{"hint":"Additional Fields to be displayed","name":"secondary_fields","label":"Secondary Fields","type":"field_list"},{"hint":"Number of records to show in widget","name":"max_records","default_value":"","label":"Max number of records to show","type":"string"},{"hint":"Show even when empty","name":"always_show","label":"Show even when empty","type":"boolean"},{"hint":"Show Secondary Fields Label","name":"show_secondary_fields_label","label":"Show Secondary Fields Label","type":"boolean"},{"displayValue":"Knowledge Base","hint":"Show result for specific knowledge base. Keep blank to show for all bases.","name":"knowledge_base","label":"Knowledge Base","type":"reference","value":"kb_knowledge_base","ed":{"reference":"kb_knowledge_base"}}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	if(input)
+		return;
+	else {
+	options.aria_label_title = options.title || gs.getMessage('Featured Articles');
+	options.title = options.title || gs.getMessage('Featured');
+	options.display_field = options.display_field || "short_description"; 
+	options.secondary_fields = options.secondary_fields ? options.secondary_fields.split(",") : getKnowledgeFieldsfromProperties();
+	options.show_secondary_fields_label = options.show_secondary_fields_label ? options.show_secondary_fields_label == 'true' : false;
+	options.max_records = options.max_records || gs.getProperty('glide.knowman.content_block_limit')|| '5';
+	options.always_show = options.always_show ? options.always_show == 'true' : true;
+	options.reverse = false;
+
+	if(options.display_field != "short_description"){
+		options.secondary_fields.push(options.display_field);
+	}
+
+	var kbService = new KBPortalService();
+	options.knowledge_base = options.knowledge_base || String(kbService.getServicePortalKnowledgeBases($sp.getPortalRecord().url_suffix)) || "";
+	var j = 0;
+	var result = [];
+	var kb = kbService.getFeaturedArticles(options.max_records,options.display_field,options.secondary_fields,options.knowledge_base);
+	if(kb.results){
+		kb.results.forEach(function(f){
+			var record = {};
+			record.id = f.id+"";
+			record.link = f.link;
+			record.direct = f.meta.direct || false;
+			record.external = f.meta.external || false;
+			record.external_link = f.meta.external_link;
+
+			if (options.display_field){
+				if(options.display_field == "short_description"){
+					record.display_field = f.title;
+				}else{
+					record.display_field = f.meta[options.display_field].display_value;
+				}
+			}
+			record.order = j;
+			j++;
+
+			record.secondary_fields = [];
+			options.secondary_fields.forEach(function(key){
+				if(options.display_field != key)
+				record.secondary_fields.push(f.meta[key]);
+			});
+
+
+			result.push(record);
+		});
+	}
+
+	options.result = result;
+	data.template = $sp.getWidget("kb-list-widget-template", options);
+	}
+
+	function getKnowledgeFieldsfromProperties(){
+
+		//Generate secondary fields based on legacy properties
+		var fields = [];
+
+		if(gs.getProperty('glide.knowman.search.show_article_number','false') == 'true'){
+			var kbMod = new global.KBViewModel();
+			if(kbMod.isVersioningEnabled()){
+				fields.push('display_number');
+			}else{
+				fields.push('number');
+			}
+		}
+		if(gs.getProperty('glide.knowman.search.show_author','false') == 'true')
+			fields.push('author');
+		if(gs.getProperty('glide.knowman.search.show_view_count','false') == 'true')
+			fields.push('sys_view_count');		
+		if(gs.getProperty('glide.knowman.search.show_last_modified','false') == 'true')
+			fields.push('sys_updated_on');
+		if(gs.getProperty('glide.knowman.search.show_published','false') == 'true')
+			fields.push('published');
+		if(gs.getProperty('glide.knowman.show_unpublished','false') == 'true')
+			fields.push('workflow_state');
+		if(gs.getProperty('glide.knowman.search.show_rating','false') == 'true')
+			fields.push('rating');
+
+		return fields;
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-01-20 13:34:25&lt;/sys_created_on&gt;&lt;sys_id&gt;ba8d45ffdb50320099f93691f0b8f51b&lt;/sys_id&gt;&lt;sys_mod_count&gt;26&lt;/sys_mod_count&gt;&lt;sys_name&gt;Knowledge Featured Articles&lt;/sys_name&gt;&lt;sys_package display_value="Knowledge Management - Service Portal" source="sn_km_portal"&gt;bab6dea3db20320099f93691f0b8f590&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Knowledge Management - Service Portal"&gt;bab6dea3db20320099f93691f0b8f590&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_ba8d45ffdb50320099f93691f0b8f51b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-01-29 13:21:44&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="kb-article-list"&gt;
+ &lt;sp-widget widget="::c.data.template"&gt;&lt;/sp-widget&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-09 04:06:04</sys_created_on>
+        <sys_id>882b2d141be9a11071f38623604bcba6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>8c2b2d141be9a11071f38623604bcba3</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_882b2d141be9a11071f38623604bcba6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-09 04:06:04</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

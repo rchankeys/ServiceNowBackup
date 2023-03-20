@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_968752_test.submitter" name="x_968752_test.submitter">649f6d5ad4a061101b006674dec348a1</contains>
+        <role display_value="x_968752_test.approver" name="x_968752_test.approver">e49f6d5a50a061109ca87c5f67515da1</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-24 16:30:43</sys_created_on>
+        <sys_id>649f6d5a34a061102e93da788da1176b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sys_user_role_contains_649f6d5a34a061102e93da788da1176b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-24 16:30:43</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

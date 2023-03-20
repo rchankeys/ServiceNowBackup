@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="Reject document">a89f6d5acba061104c7dd84e74c5ea77</button>
+        <item_parameter display_value="comments">e49f6d5a2aa061106ed552ec53f79577</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-24 16:30:51</sys_created_on>
+        <sys_id>689f6d5aa5a06110d5944a598ffe4077</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>e49f6d5a2aa061106ed552ec53f79577</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_689f6d5aa5a06110d5944a598ffe4077</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-24 16:30:51</sys_updated_on>
+        <ui_parameter display_value="Reason for rejecting">e09f6d5a20a061102bd2c1152fd70577</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

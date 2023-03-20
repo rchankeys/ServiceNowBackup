@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+	/* widget controller */
+	var c = this;
+	c.template = "kb_article_list_template";
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,color,glyph,css</field_list>
+        <has_preview>false</has_preview>
+        <id>email_knowledge_articles</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Email Knowledge Articles</name>
+        <option_schema>[{"hint":"Knowledge","name":"table","default_value":"kb_knowledge","label":"Table","type":"choice","choices":[{"label":"Knowledge","value":"kb_knowledge"}]},{"hint":"Display Field","name":"display_field","default_value":"short_description","label":"Display Field","type":"field_name"},{"hint":"Additional Fields to be displayed","name":"secondary_fields","label":"Secondary Fields","type":"field_list"},{"hint":"Number of records to show in widget","name":"max_records","default_value":"","label":"Max number of records to show","type":"string"},{"hint":"Show even when empty","name":"always_show","label":"Show even when empty","type":"boolean"},{"hint":"Show Secondary Fields Label","name":"show_secondary_fields_label","label":"Show Secondary Fields Label","type":"boolean"},{"displayValue":"Knowledge Base","hint":"Show result for specific knowledge base. Keep blank to show for all bases.","name":"knowledge_base","label":"Knowledge Base","type":"reference","value":"kb_knowledge_base","ed":{"reference":"kb_knowledge_base"}}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	if(input)
+		return;
+	else {
+	options.aria_label_title = options.title || gs.getMessage('Featured Articles');
+	options.title = options.title || gs.getMessage('Helpful Email Articles');
+	options.display_field = options.display_field || "short_description"; 
+	options.secondary_fields = options.secondary_fields ? options.secondary_fields.split(",") : getKnowledgeFieldsfromProperties();
+	options.show_secondary_fields_label = options.show_secondary_fields_label ? options.show_secondary_fields_label == 'true' : false;
+	options.max_records = options.max_records || gs.getProperty('glide.knowman.content_block_limit')|| '5';
+	options.always_show = options.always_show ? options.always_show == 'true' : true;
+	options.reverse = false;
+
+	if(options.display_field != "short_description"){
+		options.secondary_fields.push(options.display_field);
+	}
+
+	var kbService = new KBPPortalServiceCLONE();
+	options.knowledge_base = options.knowledge_base || String(kbService.getServicePortalKnowledgeBases($sp.getPortalRecord().url_suffix)) || "";
+	var j = 0;
+	var result = [];
+	var kb = kbService.getFeaturedArticles(options.max_records,options.display_field,options.secondary_fields,options.knowledge_base);
+	if(kb.results){
+		kb.results.forEach(function(f){
+			var record = {};
+			record.id = f.id+"";
+			record.link = f.link;
+			record.direct = f.meta.direct || false;
+			record.external = f.meta.external || false;
+			record.external_link = f.meta.external_link;
+
+			if (options.display_field){
+				if(options.display_field == "short_description"){
+					record.display_field = f.title;
+				}else{
+					record.display_field = f.meta[options.display_field].display_value;
+				}
+			}
+			record.order = j;
+			j++;
+
+			record.secondary_fields = [];
+			options.secondary_fields.forEach(function(key){
+				if(options.display_field != key)
+				record.secondary_fields.push(f.meta[key]);
+			});
+
+
+			result.push(record);
+		});
+	}
+
+	options.result = result;
+	data.template = $sp.getWidget("kb-list-widget-template", options);
+	}
+
+	function getKnowledgeFieldsfromProperties(){
+
+		//Generate secondary fields based on legacy properties
+		var fields = [];
+
+		if(gs.getProperty('glide.knowman.search.show_article_number','false') == 'true'){
+			var kbMod = new global.KBViewModel();
+			if(kbMod.isVersioningEnabled()){
+				fields.push('display_number');
+			}else{
+				fields.push('number');
+			}
+		}
+		if(gs.getProperty('glide.knowman.search.show_author','false') == 'true')
+			fields.push('author');
+		if(gs.getProperty('glide.knowman.search.show_view_count','false') == 'true')
+			fields.push('sys_view_count');		
+		if(gs.getProperty('glide.knowman.search.show_last_modified','false') == 'true')
+			fields.push('sys_updated_on');
+		if(gs.getProperty('glide.knowman.search.show_published','false') == 'true')
+			fields.push('published');
+		if(gs.getProperty('glide.knowman.show_unpublished','false') == 'true')
+			fields.push('workflow_state');
+		if(gs.getProperty('glide.knowman.search.show_rating','false') == 'true')
+			fields.push('rating');
+
+		return fields;
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-09 04:06:04</sys_created_on>
+        <sys_id>8c2b2d141be9a11071f38623604bcba3</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Email Knowledge Articles</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sp_widget_8c2b2d141be9a11071f38623604bcba3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-10 19:11:31</sys_updated_on>
+        <template><![CDATA[<div class="kb-article-list">
+ <sp-widget widget="::c.data.template"></sp-widget>
+</div>]]></template>
+    </sp_widget>
+</record_update>
