@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">1477eab91b25291071f38623604bcb8d</sp_column>
+        <sp_widget display_value="HTML with CSS">9b6ef3801b65a11071f38623604bcb1f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-14 00:19:44</sys_created_on>
+        <sys_id>9147a6311b25291071f38623604bcb1c</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sp_instance_9147a6311b25291071f38623604bcb1c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-14 04:03:28</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<p>Microsoft Teams Training Paths</p>\r\n<p>Get productive with quick start tutorials and resources.</p>\r\n<p><a title=\"Browse Training Options &gt;\" href=\"https://keysighttech.sharepoint.com/sites/o365helpcenter/SitePages/Advanced-Training-Path.aspx?web=1#welcome-to-teams\">Browse Training Options &gt;</a>&nbsp;</p>",
+		"displayValue": "<p>Microsoft Teams Training Paths</p>\n<p>Get productive with quick start tutorials and resources.</p>\n<p><a title=\"Browse Training Options &gt;\" href=\"https://keysighttech.sharepoint.com/sites/o365helpcenter/SitePages/Advanced-Training-Path.aspx?web=1#welcome-to-teams\">Browse Training Options &gt;</a>&nbsp;</p>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=9147a6311b25291071f38623604bcb1c"/>
+</record_update>

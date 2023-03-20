@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="a49f6d5a8aa06110b3df12724997cb6c" sys_domain="global" table="x_968752_test_document_approval" version="3" view="workspace">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-24 16:30:42</sys_created_on>
+            <sys_id>a89f6d5ab7a06110f240234b9e09166c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_968752_test_document_approval" sys_domain="global" view="11739aa0f98211108c8bd16244dfe72b">a49f6d5a8aa06110b3df12724997cb6c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-24 16:30:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>approval_category</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-24 16:30:42</sys_created_on>
+            <sys_id>6c9f6d5ab6a0611096623cbd5da4ea6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_968752_test_document_approval" sys_domain="global" view="11739aa0f98211108c8bd16244dfe72b">a49f6d5a8aa06110b3df12724997cb6c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-24 16:30:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-24 16:30:42</sys_created_on>
+            <sys_id>209f6d5a5ea06110b51dc8791792de6d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_968752_test_document_approval" sys_domain="global" view="11739aa0f98211108c8bd16244dfe72b">a49f6d5a8aa06110b3df12724997cb6c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-24 16:30:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-24 16:30:42</sys_created_on>
+            <sys_id>e49f6d5aeca06110a42d29ddf82c466c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_968752_test_document_approval" sys_domain="global" view="11739aa0f98211108c8bd16244dfe72b">a49f6d5a8aa06110b3df12724997cb6c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-24 16:30:42</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-24 16:30:42</sys_created_on>
+            <sys_id>e89f6d5ad0a061108eb7ce34543d326c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_968752_test_document_approval" sys_domain="global" view="11739aa0f98211108c8bd16244dfe72b">a49f6d5a8aa06110b3df12724997cb6c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-24 16:30:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>submitter</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-24 16:30:42</sys_created_on>
+            <sys_id>ac9f6d5aaba061105cbcb589cac1fd6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_968752_test_document_approval" sys_domain="global" view="11739aa0f98211108c8bd16244dfe72b">a49f6d5a8aa06110b3df12724997cb6c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-24 16:30:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-24 16:30:42</sys_created_on>
+            <sys_id>ec9f6d5ab6a06110952f1e5f17cf116c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_968752_test_document_approval" sys_domain="global" view="11739aa0f98211108c8bd16244dfe72b">a49f6d5a8aa06110b3df12724997cb6c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-24 16:30:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-24 16:30:42</sys_created_on>
+            <sys_id>289f6d5ab9a06110d97975525f32bb6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_968752_test_document_approval" sys_domain="global" view="11739aa0f98211108c8bd16244dfe72b">a49f6d5a8aa06110b3df12724997cb6c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-24 16:30:42</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-24 16:30:42</sys_created_on>
+            <sys_id>2c9f6d5a56a061109ddf3479689be66c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_968752_test_document_approval" sys_domain="global" view="11739aa0f98211108c8bd16244dfe72b">a49f6d5a8aa06110b3df12724997cb6c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-24 16:30:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_968752_test_document_approval</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-24 16:30:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a49f6d5a8aa06110b3df12724997cb6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_968752_test_document_approval</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+            <sys_update_name>sys_ui_section_a49f6d5a8aa06110b3df12724997cb6c</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-24 16:30:42</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace" name="workspace">11739aa0f98211108c8bd16244dfe72b</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

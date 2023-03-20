@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">fcfced211be1e51071f38623604bcb08</sp_column>
+        <sp_widget display_value="HTML with CSS">9b6ef3801b65a11071f38623604bcb1f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-13 01:35:59</sys_created_on>
+        <sys_id>282fe9611be1e51071f38623604bcbc8</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sp_instance_282fe9611be1e51071f38623604bcbc8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-14 03:00:21</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<p>Microsoft Teams is cloud-based team collaboration software that is part of the Microsoft 365 and Office 365 suite of applications. The core capabilities in Microsoft Teams include business messaging, calling, video meetings and file sharing. Businesses of all sizes can use Teams.</p>\r\n<p>Teams is Microsoft's core cloud-based unified communications (<a href=\"https://www.techtarget.com/searchunifiedcommunications/definition/unified-communications\">UC</a>) offering, and it competes with similar products, such as Slack, Cisco Webex and Google Workspace. As a business communications app, Teams enables local and remote workers to collaborate on content in real time and near-real time across different devices, including laptops and mobile devices. Microsoft Teams integrates with other Microsoft business applications, including Exchange, PowerPoint and SharePoint.</p>\r\n<p>Microsoft Teams is especially useful for remote collaboration because it keeps dispersed teams of workers connected and communicating. The COVID-19 pandemic compelled organizations worldwide to use Microsoft Teams extensively -- as well as other collaboration software -- as a communications platform for&nbsp;<a href=\"https://www.techtarget.com/searchunifiedcommunications/tip/5-key-Microsoft-Teams-capabilities-to-support-remote-work\">remote work</a>.</p>\r\n<p>Microsoft Teams is usually deployed across entire organizations and not just within certain company departments. In some cases, Teams could replace email for internal company communication among employees.</p>\r\n<p>Teams Description from <a href=\"https://www.techtarget.com/searchunifiedcommunications/definition/Microsoft-Teams\">https://www.techtarget.com/searchunifiedcommunications/definition/Microsoft-Teams</a></p>\r\n<p>Tips:&nbsp;</p>\r\n<ul>\r\n<li>Catch up on all your unread messages, @mentions, replies, and more under <strong>Activity</strong></li>\r\n<li>Use the <strong>Search&nbsp;</strong>box to find and filter specific items or people, take quick actions, and launch apps.</li>\r\n</ul>",
+		"displayValue": "<p>Microsoft Teams is cloud-based team collaboration software that is part of the Microsoft 365 and Office 365 suite of applications. The core capabilities in Microsoft Teams include business messaging, calling, video meetings and file sharing. Businesses of all sizes can use Teams.</p>\n<p>Teams is Microsoft's core cloud-based unified communications (<a href=\"https://www.techtarget.com/searchunifiedcommunications/definition/unified-communications\">UC</a>) offering, and it competes with similar products, such as Slack, Cisco Webex and Google Workspace. As a business communications app, Teams enables local and remote workers to collaborate on content in real time and near-real time across different devices, including laptops and mobile devices. Microsoft Teams integrates with other Microsoft business applications, including Exchange, PowerPoint and SharePoint.</p>\n<p>Microsoft Teams is especially useful for remote collaboration because it keeps dispersed teams of workers connected and communicating. The COVID-19 pandemic compelled organizations worldwide to use Microsoft Teams extensively -- as well as other collaboration software -- as a communications platform for&nbsp;<a href=\"https://www.techtarget.com/searchunifiedcommunications/tip/5-key-Microsoft-Teams-capabilities-to-support-remote-work\">remote work</a>.</p>\n<p>Microsoft Teams is usually deployed across entire organizations and not just within certain company departments. In some cases, Teams could replace email for internal company communication among employees.</p>\n<p>Teams Description from <a href=\"https://www.techtarget.com/searchunifiedcommunications/definition/Microsoft-Teams\">https://www.techtarget.com/searchunifiedcommunications/definition/Microsoft-Teams</a></p>\n<p>Tips:&nbsp;</p>\n<ul>\n<li>Catch up on all your unread messages, @mentions, replies, and more under <strong>Activity</strong></li>\n<li>Use the <strong>Search&nbsp;</strong>box to find and filter specific items or people, take quick actions, and launch apps.</li>\n</ul>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=282fe9611be1e51071f38623604bcbc8"/>
+</record_update>

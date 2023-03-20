@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_datasource">
+    <sys_ux_composite_data_m2m_datasource action="INSERT_OR_UPDATE">
+        <dataset display_value="doc-approval-get-returned">e49f6d5a8ea0611036ae22e7fe945860</dataset>
+        <datasource display_value="doc-approval-get-returned">649f6d5a3fa061107e09a09d1bb07160</datasource>
+        <sys_class_name>sys_ux_composite_data_m2m_datasource</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-24 16:30:51</sys_created_on>
+        <sys_id>e09f6d5af5a061105dd55999faf3da60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_datasource_e09f6d5af5a061105dd55999faf3da60</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-24 16:30:51</sys_updated_on>
+    </sys_ux_composite_data_m2m_datasource>
+</record_update>

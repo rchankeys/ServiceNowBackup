@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Record">e89f6d5adba06110c8aa06171dfcc36a</macroponent>
+        <name>Launch Special Handling Notes</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[function handler({
+    api,
+    helpers,
+    event,
+    imports
+}) {
+   const {
+    snHttp,
+    modal,
+    screen
+} = helpers;
+
+var SHNOutput = api.data.get_special_handling_notes.output.data.GlideSHN_Query;
+var showModal = SHNOutput && SHNOutput.totalMsg > 0;
+var gFormData = api.data.gform.nowRecordFormBlob;
+
+if (showModal && gFormData) {
+    api.emit('RECORD#OPEN_MODAL', {
+        "route": "shn",
+        "fields": {
+            "confs": SHNOutput,
+            "table": gFormData.table,
+            "sysId": gFormData.sysId
+        }
+    });
+} else {
+    console.error("Unable to load data.");
+}
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-24 16:30:50</sys_created_on>
+        <sys_id>689f6d5a43a061103fa8d9d94455a063</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Launch Special Handling Notes</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sys_ux_client_script_689f6d5a43a061103fa8d9d94455a063</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-24 16:30:50</sys_updated_on>
+        <target/>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">d0190fa71b55211071f38623604bcb5a</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-07 04:20:37</sys_created_on>
+        <sys_id>714b57e71b95211071f38623604bcb67</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sp_instance_714b57e71b95211071f38623604bcb67</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-09 04:06:51</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<h2>Helpful Email Articles</h2>\r\n<p><a href=\"https://dev110199.service-now.com/now/nav/ui/classic/params/target/kb_view.do%3Fsysparm_article%3DKB0000029\">What is Spam?</a></p>\r\n<p><a href=\"https://dev110199.service-now.com/now/nav/ui/classic/params/target/kb_view.do%3Fsysparm_article%3DKB0000030\">Deleted Email Recovery</a></p>\r\n<p><a href=\"https://dev110199.service-now.com/now/nav/ui/classic/params/target/kb_view.do%3Fsysparm_article%3DKB0000026\">Create and Edit a Contact Group</a></p>",
+		"displayValue": "<h2>Helpful Email Articles</h2>\n<p><a href=\"https://dev110199.service-now.com/now/nav/ui/classic/params/target/kb_view.do%3Fsysparm_article%3DKB0000029\">What is Spam?</a></p>\n<p><a href=\"https://dev110199.service-now.com/now/nav/ui/classic/params/target/kb_view.do%3Fsysparm_article%3DKB0000030\">Deleted Email Recovery</a></p>\n<p><a href=\"https://dev110199.service-now.com/now/nav/ui/classic/params/target/kb_view.do%3Fsysparm_article%3DKB0000026\">Create and Edit a Contact Group</a></p>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=714b57e71b95211071f38623604bcb67"/>
+</record_update>

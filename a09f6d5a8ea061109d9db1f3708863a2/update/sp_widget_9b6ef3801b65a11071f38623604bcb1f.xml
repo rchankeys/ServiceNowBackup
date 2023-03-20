@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function ($scope, $sce) {
+	var c = this;
+	c.html = $sce.trustAsHtml(c.options.html);
+	$scope.$watch('c.options.html',function(){
+		c.html = $sce.trustAsHtml(c.options.html);
+	})
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.result-container {
+ margin-top: 10px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data>{"options": &#13;
+	{&#13;
+		"html": "&lt;i&gt;Hi&lt;/i&gt;",&#13;
+		"title": "HTML"&#13;
+	}&#13;
+}</demo_data>
+        <description/>
+        <docs/>
+        <field_list>title</field_list>
+        <has_preview>false</has_preview>
+        <id>html_with_css</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HTML with CSS</name>
+        <option_schema>[{"name":"html","default_value":" &lt;b&gt;hello&lt;/b&gt;","section":"Data","label":"HTML","type":"translated_html"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-08 20:11:09</sys_created_on>
+        <sys_id>9b6ef3801b65a11071f38623604bcb1f</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>HTML with CSS</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sp_widget_9b6ef3801b65a11071f38623604bcb1f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-09 03:50:46</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-primary">
+  <div ng-if="!c.options.html" class="panel panel-default">
+    <div class="panel-body">
+      <b>${HTML Widget}</b><br>
+      ${Ctrl + Click > Options to set HTML content}
+    </div>
+  </div>
+  <div ng-if="c.options.html" ng-bind-html="c.html"></div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

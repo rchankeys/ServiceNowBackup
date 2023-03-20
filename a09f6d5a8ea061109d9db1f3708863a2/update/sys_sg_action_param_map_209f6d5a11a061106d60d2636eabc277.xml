@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="Return document">609f6d5a8aa06110224717d7ff07a777</button>
+        <item_parameter display_value="comments">ec9f6d5ae1a06110228def9e95fa5876</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-24 16:30:44</sys_created_on>
+        <sys_id>209f6d5a11a061106d60d2636eabc277</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ec9f6d5ae1a06110228def9e95fa5876</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_209f6d5a11a061106d60d2636eabc277</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-24 16:30:44</sys_updated_on>
+        <ui_parameter display_value="Reason for returning">e89f6d5abba0611070c50a9fe15c8877</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

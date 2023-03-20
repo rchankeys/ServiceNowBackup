@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_list">
+    <sys_ux_applicability_m2m_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="Document Admin">649f6d5aada061109ee275e95b38f56a</applicability>
+        <list display_value="Document Approval Categories">a89f6d5a30a06110812cac5ad82dd569</list>
+        <order>0</order>
+        <sys_class_name>sys_ux_applicability_m2m_list</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-24 16:31:00</sys_created_on>
+        <sys_id>e89f6d5a7fa061100c028914e42a8369</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_list_e89f6d5a7fa061100c028914e42a8369</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-24 16:31:00</sys_updated_on>
+    </sys_ux_applicability_m2m_list>
+</record_update>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Doc Approval Portal App Config">249f6d5aaea061106f88a8ed3afc4ea1</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>Activity</name>
+        <optional_parameters/>
+        <order>100</order>
+        <parent_macroponent display_value="document_record_display">e09f6d5a20a06110d98f6cbb1dc9d767</parent_macroponent>
+        <parent_macroponent_composition_element_id>ckijothhjjddaaaaaaxddeiiabcceezpbblii</parent_macroponent_composition_element_id>
+        <route_type>activity</route_type>
+        <screen_type display_value="Activity">249f6d5a7ba061103d0c2aa8e912a967</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-24 16:30:43</sys_created_on>
+        <sys_id>e49f6d5af1a061105c818f078e99ab66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Activity</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sys_ux_app_route_e49f6d5af1a061105c818f078e99ab66</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-24 16:30:43</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=e49f6d5af1a061105c818f078e99ab66"/>
+</record_update>

@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="relevant for you clone">f637fe4e1b05291071f38623604bcbf7</child>
+        <cloned>2023-02-17 23:36:34</cloned>
+        <last_validated>2023-02-17 23:36:34</last_validated>
+        <parent display_value="Relevant for you">6cc836d0dbf700500c209493db961914</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $window, $timeout, $interval) {
+    /* widget controller */
+    var c = this;
+    var stop;
+    var defaultFontSize = '16px';
+    var focusableElementPresent = false;
+    //list of all possible focusable elements inside card in reverse tab order.
+    var focusableElmtSelectors = ['.favorite-button'];
+
+    c.sectionWidth = 252;
+    c.trackCount = 0;
+    c.rightVisible = false;
+    c.leftVisible = false;
+    c.tracker = 0;
+
+
+    c.getDashboardParentNode = function() {
+        return $('.instance-' + c.data.instanceId);
+    }
+
+    c.getContentsSectionNode = function() {
+        return $('.' + c.data.instanceId + '-contents-section');
+    }
+
+    c.getSwipeNode = function(pos) {
+        return $('.' + c.data.instanceId + '-' + pos + '-swipe');
+    }
+
+    c.getScrollLength = function() {
+        return parseInt((c.sectionProportion() * $('.' + c.data.instanceId + '-body-content').innerWidth()));
+    }
+
+    c.getSectionWidth = function() {
+        return c.getDashboardParentNode().outerWidth();
+    }
+
+    c.sectionProportion = function() {
+        var value = parseInt(Math.floor(c.getSectionWidth() / c.sectionWidth));
+        return value ? value : 1;
+    }
+
+    c.getRightSwipeMargin = function() {
+        return (parseInt(c.getSectionWidth() - 25)) + 'px';
+    }
+
+    c.moveLeft = function() {
+        var scrollVal = c.getScrollLength();
+        var leftPos = c.getContentsSectionNode().scrollLeft();
+        c.getContentsSectionNode().animate({
+            scrollLeft: leftPos - scrollVal
+        }, 100);
+
+        c.swipeLeft();
+    }
+
+    c.moveRight = function() {
+        var scrollVal = c.getScrollLength();
+        var leftPos = c.getContentsSectionNode().scrollLeft();
+        c.getContentsSectionNode().animate({
+            scrollLeft: leftPos + scrollVal
+        }, 100);
+
+        c.swipeRight();
+
+    }
+
+    c.swipeInitialize = function() {
+        c.trackCount = 0;
+        c.rightVisible = false;
+        c.leftVisible = false;
+        var currentWidth = c.getSectionWidth();
+
+        if (c.trackCount == 0 &amp;&amp; c.rightVisible == false) {
+            var totalCards = c.data.widgetsData.length;
+            if (totalCards &gt; c.sectionProportion()) {
+                c.rightVisible = true;
+            }
+        }
+
+        if (c.getSwipeNode('right').length &gt; 0) {
+            document.querySelector('#' + c.data.instanceId + '-right-swipe').style.marginLeft = (parseInt(currentWidth) - 20) + 'px';
+        }
+
+    }
+
+    c.swipeRight = function() {
+        var totalCards = c.data.widgetsData.length;
+        var trace = c.trackCount + c.sectionProportion();
+        if ((totalCards - trace) &gt;= c.sectionProportion()) {
+            c.trackCount = trace;
+        } else {
+            c.trackCount = totalCards;
+        }
+    }
+
+    c.showRightArrow = function() {
+        var totalCards = c.data.widgetsData.length;
+        var cardsDisplayed = c.sectionProportion();
+        var p = c.getSectionWidth();
+
+        if (cardsDisplayed &gt;= totalCards) return false;
+
+        else if (c.trackCount == 0) return true;
+
+        else if ((cardsDisplayed == 1) &amp;&amp; (c.trackCount &gt;= (totalCards - cardsDisplayed))) return false;
+
+        else if ((cardsDisplayed &gt; 1) &amp;&amp; c.trackCount &gt;= (totalCards - cardsDisplayed)) return false;
+
+        else if (cardsDisplayed == totalCards) return false;
+
+        else return true;
+    }
+
+    c.showLeftArrow = function() {
+        var totalCards = c.data.widgetsData.length;
+        var cardsDisplayed = c.sectionProportion();
+
+        if (c.trackCount == 0) return false;
+
+        else if (cardsDisplayed == totalCards) return false;
+
+        else if (c.trackCount &gt;= (c.data.widgetsData.length - 1)) return true;
+
+        else return true;
+
+    }
+
+    c.swipeLeft = function() {
+        var totalCards = c.data.widgetsData.length;
+        var trace = c.trackCount - c.sectionProportion();
+
+        if (trace &gt;= c.sectionProportion())
+            c.trackCount -= c.sectionProportion();
+        else {
+            c.trackCount = 0;
+        }
+    }
+
+    c.focusableElmtInsideCard = function() {
+        var widgetSection = document.querySelector('.contents-section');
+        for (var i = 0; i &lt;= focusableElmtSelectors.length - 1; i++) {
+            if (widgetSection.querySelector(focusableElmtSelectors[i])) {
+                focusableElementPresent = true;
+                break;
+            }
+        }
+    }
+
+    var appWindow = angular.element($window);
+    appWindow.bind('resize', resetSwipe);
+
+
+    function resetSwipe() {
+        $scope.$apply();
+    }
+
+    function loadData() {
+        c.data.action = "loadData";
+        c.server.update().then(function() {
+            $timeout(function() {
+                c.focusableElmtInsideCard();
+                c.setEventListeners();
+                c.createPolling();
+            }, 100);
+        });
+    }
+
+    c.navigate = function(object) {
+        var url = "?id=kb_article&amp;sys_id=" + object.sys_id
+
+        if (object.itemType == 'Request')
+            url = object.href;
+
+        $window.open(url, '_self');
+    }
+
+    c.createPolling = function() {
+        stop = $interval(function() {
+            var currentFontSize = $("#body-content").css('font-size');
+            if (defaultFontSize !== currentFontSize) {
+                defaultFontSize = currentFontSize;
+                c.sectionWidth = $('.' + c.data.instanceId + '-body-content').innerWidth() + 20; //margin
+                c.showRightArrow();
+            }
+        }, 1000);
+    };
+
+    c.setFocus = function(focusableElement) {
+        setTimeout(function() {
+            focusableElement.focus({
+                preventScroll: true
+            });
+        }, 0);
+    }
+
+    $scope.$on('$destroy', function() {
+        // Make sure that the interval is destroyed too
+        if (angular.isDefined(stop)) {
+            $interval.cancel(stop);
+            stop = undefined;
+        }
+    });
+
+    c.setEventListeners = function() {
+        if (c.options.card_behaviour === 'single' &amp;&amp; c.data.listType === 'card-list') {
+            var containerSelector = 'div.instance-' + c.data.instanceId;
+            var cardSelector = 'div.content-card';
+            var container = document.querySelector(containerSelector);
+            if (container) {
+                //convert to an array so that we can use array functions.
+                c.cardElements = Array.from(container.querySelectorAll(cardSelector));
+                c.cardElements.forEach(function(node, index) {
+                    // set tab index to -1 so that we can handle focusing ourselves
+                    if (index !== 0 &amp;&amp; index !== c.cardElements.length - 1) {
+                        node.tabIndex = -1;
+                    }
+                    node.addEventListener('keydown', function(e) {
+                        if (e &amp;&amp; e.currentTarget &amp;&amp; e.currentTarget.offsetParent) {
+                            var currentIndex = c.cardElements.indexOf(e.currentTarget);
+                            if (currentIndex === 0) {
+                                c.trackCount = 0;
+                            }
+                            var containerRect = e.currentTarget.offsetParent.getBoundingClientRect();
+                            var focusableElement;
+
+                            // check if tab is clicked with out shift and the tabbed element is not last element
+                            if (e.which == 9 &amp;&amp; !e.shiftKey &amp;&amp; currentIndex &lt; c.cardElements.length - 1) {
+                                //check if any of the cards have focusable elements inside them.
+                                if (!focusableElementPresent) {
+                                    e.preventDefault();
+                                    focusableElement = c.cardElements[currentIndex + 1];
+                                    //get coordinates of the container and card element to determine if we have to move them.
+                                    var focusedRect = focusableElement.getBoundingClientRect();
+                                    var parentPositionFromLeft = containerRect.left + containerRect.width;
+                                    var currentPositionFromLeft = focusedRect.left + focusedRect.width;
+                                    c.setFocus(focusableElement);
+                                    if (parentPositionFromLeft &lt; currentPositionFromLeft) {
+                                        c.moveRight();
+                                    }
+                                } else {
+                                    var lastFocusableElement;
+                                    for (var i = 0; i &lt;= focusableElmtSelectors.length - 1; i++) {
+                                        lastFocusableElement = e.currentTarget.querySelector(focusableElmtSelectors[i]);
+                                        if (lastFocusableElement) {
+                                            break;
+                                        }
+                                    }
+                                    if (!lastFocusableElement || e.target == lastFocusableElement) {
+                                        e.preventDefault();
+                                        focusableElement = c.cardElements[currentIndex + 1];
+                                        //get coordinates of the container and card element to determine if we have to move them.
+                                        var focusedRect = focusableElement.getBoundingClientRect();
+                                        var parentPositionFromLeft = containerRect.left + containerRect.width;
+                                        var currentPositionFromLeft = focusedRect.left + focusedRect.width;
+                                        c.setFocus(focusableElement);
+                                        if (parentPositionFromLeft &lt; currentPositionFromLeft) {
+                                            c.moveRight();
+                                        }
+                                    }
+                                }
+                            }
+
+                            // check if tab is clicked with shift and the tabbed element is not first element
+                            else if (e.which === 9 &amp;&amp; e.shiftKey &amp;&amp; currentIndex &gt; 0) {
+                                //check if any of the cards have focusable elements inside them.
+                                if (!focusableElementPresent) {
+                                    e.preventDefault();
+                                    focusableElement = c.cardElements[currentIndex - 1];
+                                    var newFocuredRect = focusableElement.getBoundingClientRect();
+                                    c.setFocus(focusableElement);
+                                    if (newFocuredRect.left &lt; containerRect.left) {
+                                        c.moveLeft();
+                                    }
+                                } else {
+                                    //check if event is triggered by card itself.
+                                    if (e.currentTarget == e.target) {
+                                        var leftCardLastFocusableElement;
+                                        var leftCard = c.cardElements[currentIndex - 1];
+                                        for (var k = 0; k &lt;= focusableElmtSelectors.length - 1; k++) {
+                                            leftCardLastFocusableElement = leftCard.querySelector(focusableElmtSelectors[k]);
+                                            if (leftCardLastFocusableElement) {
+                                                break;
+                                            }
+                                        }
+                                        //Check if left card does not have focusable element
+                                        if (!leftCardLastFocusableElement) {
+                                            e.preventDefault();
+                                            focusableElement = c.cardElements[currentIndex - 1];
+                                            var newFocuredRect = focusableElement.getBoundingClientRect();
+                                            c.setFocus(focusableElement);
+                                            if (newFocuredRect.left &lt; containerRect.left) {
+                                                c.moveLeft();
+                                            }
+                                        } else {
+                                            focusableElement = c.cardElements[currentIndex - 1];
+                                            var newFocuredRect = focusableElement.getBoundingClientRect();
+                                            if (newFocuredRect.left &lt; containerRect.left) {
+                                                c.moveLeft();
+                                            }
+                                        }
+                                    } else {
+                                        var firstFocusableElement;
+                                        for (var j = focusableElmtSelectors.length - 1; j &gt;= 0; j--) {
+                                            firstFocusableElement = e.currentTarget.querySelector(focusableElmtSelectors[j]);
+                                            if (firstFocusableElement) {
+                                                break;
+                                            }
+                                        }
+                                        //check if event is triggered by first focusable element inside card.
+                                        if (firstFocusableElement &amp;&amp; firstFocusableElement == e.target) {
+                                            e.preventDefault();
+                                            focusableElement = c.cardElements[currentIndex];
+                                            c.setFocus(focusableElement);
+                                        }
+                                    }
+                                }
+                            }
+                            $scope.$apply();
+                        }
+                    });
+                })
+            }
+
+        }
+
+    }
+
+
+    $scope.$applyAsync(loadData);
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;
+$sp-space--lg : 16px !default;
+.recommendations-dashboard-section {
+	position: relative;
+	background: $background-primary;
+	box-shadow: 0 0 1rem #e5e5e5;
+	flex-direction: column;
+	display: flex;
+	box-sizing: border-box;
+	border-radius: $border-radius-large;
+	margin-bottom: $sp-space--lg;
+}
+
+.h1.panel-title:focus {
+	outline: 5px auto $input-border-focus;
+}
+
+.swipe-button:focus {
+	outline: 5px auto $input-border-focus;
+}
+
+
+.min-view {
+	max-width: 850px;
+}
+
+.max-view {
+	max-width: 1170px;
+}
+
+.line {
+	width: 100%;
+	border: 1px solid $panel-default-border;
+}
+
+.panel-title {
+	font-style: normal;
+	font-size: 20px;
+	line-height: 24px;
+	color: $gray-base;
+}
+
+.recommended-card-section {
+	height: 283px;
+}
+
+.card-border {
+  border-radius: $border-radius-base;
+	border: 1px solid $panel-default-border;
+}
+.card-border:hover {
+	box-shadow: 0rem 0.2rem 1rem #E5E5E5;
+}
+
+.swipe-button {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: $gray-base;
+	border-radius: 15px;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 160px;
+	margin-left: -10px;
+}
+
+#icon {
+	cursor: pointer;
+	width: 8.62px;
+	padding-right: 15px;
+	font-weight: bold;
+	color: $body-bg;
+}
+
+.contents-section {
+	padding: 10px $sp-space--lg;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+	
+}
+
+.content-section-single-cards {
+	display: flex;
+	flex-direction: column;
+	flex-flow: row nowrap;
+	scroll-behaviour: smooth;
+}
+
+@-moz-document url-prefix() {
+	#card-list-contents-section {
+		margin-bottom: 20px;
+		padding: 8px;
+	}
+}
+
+.card-body-content {
+	width: 258px;
+}
+
+#card-list-contents-section {
+	overflow: hidden;
+}
+
+#card-list-widget-body {
+	width: 236px;
+}
+.wrap {
+	#card-list-widget-body {
+        width: auto;
+        max-width: 500px;
+	}
+}
+
+// Apply padding only when screen size &amp;gt; 320px (400% zoom level in WCAG resolution) to avoid loss of content
+@media screen and (min-width: 321px) {
+	#body-content {
+	  padding: 10px 8px;
+    }
+}
+
+.content-card {
+	height: 170px;
+}
+
+.content-card:focus {
+	border: 0;
+}
+
+::-webkit-scrollbar {
+	display: none;
+	box-shadow: none;
+}
+
+@media screen and (max-width: 368px) {
+	#card-list-widget-body {
+		width: 25rem;
+		margin: 0 0.2rem;
+	}
+}
+/* IE specific Class to override */
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  .recommended-card-section{
+    .card-text-container{
+      min-width: 1px;
+      .text-ellipsis{
+        max-width: 100%;
+      }
+    }
+  }
+  #simple-link-contents-section {
+	  display: flex;
+	  flex-flow: row wrap;
+	  justify-content: space-between;
+	  .simple-link {
+		width: 350px;
+		max-width: 350px;
+	}
+  }
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;relevant_for_you&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;Relevant for you&lt;/name&gt;&lt;option_schema&gt;[{"name":"user_prediction_count","section":"other","default_value":"25","label":"Number of similar users used for prediction","type":"integer"},{"name":"recent_activity_cut_off_in_days","section":"other","default_value":"30","label":"Recent activity cut off in days","type":"integer"},{"name":"title","section":"other","default_value":"Recommended for you","label":"Title","type":"string"},{"hint":"Max value expected here is 10","name":"limit","section":"other","default_value":"3","label":"Limit","type":"integer"},{"name":"category","section":"other","default_value":"knowledge and catalog","label":"Category","type":"choice","choices":[{"label":"Knowledge","value":"knowledge"},{"label":"Catalog","value":"catalog"},{"label":"Knowledge and Catalog","value":"knowledge and catalog"}]},{"name":"list_type","section":"other","default_value":"Simple List","label":"List Type","type":"choice","choices":[{"label":"Card List","value":"Card List"},{"label":"Simple List","value":"Simple List"}]},{"name":"card_behaviour","section":"other","default_value":"single","label":"Card Behaviour","type":"choice","choices":[{"label":"Single","value":"single"},{"label":"Wrap","value":"wrap"}]}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+        if (input &amp;&amp; input.action == "loadData") {
+            var maxDisplayCount = 10;
+            data.instanceId = $sp.getDisplayValue("sys_id");
+            data.title = gs.getMessage(options.title);
+            data.userPredictionCount = options.user_prediction_count;
+            data.cardType = (options.list_type === 'Card List') ? options.card_behaviour + '' : '';
+            data.listType = (options.list_type === 'Card List') ? 'card-list' : 'simple-link';
+            var knowledgeBases = String($sp.getKnowledgeBases());
+    
+            var displayCount = options.limit &gt; maxDisplayCount ? maxDisplayCount : options.limit;
+            data.viewType = (displayCount &gt; 3) ? 'max-view' : 'min-view';
+            var recentActivityCutoffInDays = options.recent_activity_cut_off_in_days;
+            var recentActivityCutoffDate = new GlideDateTime();
+            recentActivityCutoffDate.addDaysLocalTime(-recentActivityCutoffInDays);
+            
+            var RelevantForYouUtil = new sn_hr_sp.RelevantForYouUtil();
+            
+            var taxonomyId = $sp.getTaxonomies();
+            var catalogPayload = {
+                users: null,
+                catalogCount: displayCount,
+                ignoredCatalogs: null,
+                recentActivityCutoffDate: recentActivityCutoffDate,
+                taxonomyId: taxonomyId
+            };
+            var articlesPayload = {
+                users: null,
+                knowledgeBases: knowledgeBases,
+                kbRecords : $sp.getAllKBRecords(knowledgeBases),
+                articleCount: displayCount,
+                recentActivityCutoffDate: recentActivityCutoffDate,
+                taxonomyId: taxonomyId
+            };
+
+            if (options.category === 'knowledge')
+                data.dataItems = RelevantForYouUtil.getRelevantArticlesAndCatalogs(articlesPayload, null, displayCount, data.userPredictionCount, taxonomyId);
+            else if (options.category === 'catalog')
+                data.dataItems = RelevantForYouUtil.getRelevantArticlesAndCatalogs(null, catalogPayload, displayCount, data.userPredictionCount, taxonomyId);
+            else
+                data.dataItems = RelevantForYouUtil.getRelevantArticlesAndCatalogs(articlesPayload, catalogPayload, displayCount, data.userPredictionCount, taxonomyId);
+            data.widgetsData = getWidgetsData(data.dataItems, data.listType);
+        }
+    
+        function getWidgetsData(dataResults, listType) {
+            listType = (listType === 'card-list') ? 'card' : 'simple_link';
+            var dataPayload = [];
+            dataResults.forEach(function(article) {
+                var itemPayload = {};
+                var widgetName = article.category == 'catalog' ? 'catalog-content' : 'kb-content';
+                itemPayload.widgetTitle = data.title;
+                itemPayload.content = article.sys_id;
+                itemPayload.content_table = article.category == 'catalog' ? 'sc_cat_item' : 'kb_knowledge';
+                itemPayload.listType = listType;
+                itemPayload.widgetData = $sp.getWidget(widgetName, itemPayload);
+                dataPayload.push(itemPayload.widgetData);
+            });
+            return dataPayload;
+        }
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-23 04:59:37&lt;/sys_created_on&gt;&lt;sys_id&gt;6cc836d0dbf700500c209493db961914&lt;/sys_id&gt;&lt;sys_mod_count&gt;255&lt;/sys_mod_count&gt;&lt;sys_name&gt;Relevant for you&lt;/sys_name&gt;&lt;sys_package display_value="Employee Center Core" source="sn_hr_sp"&gt;3d1da2705b021200a4656ede91f91ab6&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Center Core"&gt;3d1da2705b021200a4656ede91f91ab6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_6cc836d0dbf700500c209493db961914&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-24 09:27:15&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div id="recommendations-dashboard-section" class="recommendations-dashboard-section instance-{{c.data.instanceId}}" ng-if = "c.data.widgetsData.length &gt; 0 &amp;&amp; c.data.instanceId.length &gt; 0" ng-class="(c.data.listType === 'simple-link' || c.data.cardType === 'wrap') ? '': 'recommended-card-section'"&gt;
+   &lt;div class="panel-header"&gt;
+      &lt;div class="panel-heading b-b"&gt;
+         &lt;h3 class="panel-title"&gt;
+            {{::c.data.title}}
+         &lt;/h3&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div class="contents-section {{c.data.instanceId}}-contents-section" id="{{c.data.listType}}-contents-section" ng-class="(c.data.cardType === 'single' &amp;&amp; c.data.listType === 'card-list') ? 'content-section-single-cards' : ''"&gt;
+      &lt;div id="body-content" class="{{c.options.card_behaviour}} {{c.data.listType}} {{c.data.instanceId}}-body-content" ng-repeat="widgetData in c.data.widgetsData" ng-class="c.data.listType === 'simple-link' ? '': 'card-body-content'"&gt;
+         &lt;div id="{{c.data.listType}}-widget-body" ng-class="{'card-border' : c.data.listType === 'card-list'}" &gt;
+            &lt;sp-widget widget="widgetData"&gt;&lt;/sp-widget&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div tabindex="-1" role="button" aria-label="${previous}" ng-show="c.showLeftArrow()" ng-if="c.data.cardType === 'single' &amp;&amp; c.data.listType === 'card-list'" class="swipe-button" id="{{c.data.instanceId}}-left-swipe" ng-click="c.moveLeft()"&gt;&lt;span class="glyphicon glyphicon-menu-left" id="icon"&gt;&lt;/span&gt;&lt;/div&gt;
+   &lt;div tabindex="-1" role="button" aria-label="${next}" ng-show="c.showRightArrow()" ng-if="c.data.cardType === 'single' &amp;&amp; c.data.listType === 'card-list'" class="swipe-button" id="{{c.data.instanceId}}-right-swipe" ng-click="c.moveRight()" ng-style="{marginLeft: c.getRightSwipeMargin()}"&gt;&lt;span class="glyphicon glyphicon-menu-right" id="icon"&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-17 23:36:34</sys_created_on>
+        <sys_id>3237b6ce1b05291071f38623604bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>f637fe4e1b05291071f38623604bcbf7</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_3237b6ce1b05291071f38623604bcb61</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-17 23:36:34</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

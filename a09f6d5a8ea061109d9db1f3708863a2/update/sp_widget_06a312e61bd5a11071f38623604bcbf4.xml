@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope, spAriaUtil) {
+	$scope.accessibilityModeEnabled = spAriaUtil.isAccessibilityEnabled();
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.iconlink {
+	padding: 3px 0;
+}
+
+.iconlink a label,h2 {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.1;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+/* TOP ICON ---------- */
+
+a.top_icon {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+a.top_icon .fa {
+  display: block;
+  text-align: center;
+}
+
+/* CIRCLE ICON ---------- */
+
+a.circle_icon {
+  display: block;
+  padding: 20px 0px 20px 70px;
+  position: relative;
+}
+
+a.circle_icon .fa {
+  position:absolute;
+  left: 0px;
+  top: 10px;
+}
+
+/* COLOR BOX ---------- */
+
+a.color_box {
+  display: block;
+  position: relative;
+  padding: 20px 20px 20px 82px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+a.color_box .fa {
+  position:absolute;
+  left: 20px;
+  top: 20px;
+  width:42px;
+  text-align: center;
+}
+
+.icon-link-background-primary {
+  background-color: $brand-primary;
+}
+
+.icon-link-background-info {
+  background-color: $brand-info;
+}
+
+.icon-link-background-success {
+  background-color: $brand-success;
+}
+
+.icon-link-background-warning {
+  background-color: $brand-warning;
+}
+
+.icon-link-background-danger {
+  background-color: $brand-danger;
+}
+
+.icon-link-background-default {
+  background-color: $brand-primary;
+}
+
+.text-primary {
+  color: $brand-primary;
+  
+  &amp;:hover {
+    color: darken($brand-primary, 20%);
+  }
+}
+
+.text-info {
+  color: $brand-info;
+  
+  &amp;:hover {
+    color: darken($brand-info, 20%);
+  }
+}
+
+.text-success {
+  color: $brand-success;
+  
+  &amp;:hover {
+    color: darken($brand-success, 20%);
+  }
+}
+
+.text-warning {
+  color: $brand-warning;
+  
+  &amp;:hover {
+    color: darken($brand-warning, 20%);
+  }
+}
+
+.text-danger {
+  color: $brand-danger;
+  
+  &amp;:hover {
+    color: darken($brand-danger, 20%);
+  }
+}
+
+.text-default {
+  color: $brand-primary;
+  
+  &amp;:hover {
+    color: darken($brand-primary, 20%);
+  }
+}
+
+.high-contrast {
+  .text-primary {
+    color: darken($brand-primary, 10%);
+  }
+
+  .text-info {
+    color: darken($brand-info, 10%);
+  }
+
+  .text-success {
+    color: darken($brand-success, 10%);
+  }
+
+  .text-warning {
+    color: darken($brand-warning, 10%);
+  }
+
+  .text-danger {
+    color: darken($brand-danger, 10%);
+  }
+
+  .text-default {
+    color: darken($brand-primary, 10%);
+  }
+}</css>
+        <data_table>sp_instance_link</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>type,url,sc_category,sc_cat_item,kb_topic,kb_article,kb_category,sp_page,title,short_description,color,class_name,glyph</field_list>
+        <has_preview>false</has_preview>
+        <id>image</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Image</name>
+        <option_schema>[{"name":"link_template","section":"Presentation","label":"Template","type":"choice","choices":[{"label":"Top Icon","value":"Top Icon"},{"label":"Circle Icon","value":"Circle Icon"},{"label":"Color Box","value":"Color Box"}]}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function(){
+	var gr = $sp.getInstanceRecord();
+	data.href = $sp.getMenuHREF(gr);
+	data.target = options.target || "";
+	var img = new GlideRecord('db_image');
+	img.addQuery('name', 'x_968752_test.student.png');
+	img.query();
+	if (img.next()){
+	data.image = img.getValue('name');
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-03 20:33:48</sys_created_on>
+        <sys_id>06a312e61bd5a11071f38623604bcbf4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Image</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sp_widget_06a312e61bd5a11071f38623604bcbf4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-03 20:51:00</sys_updated_on>
+        <template><![CDATA[<div class="iconlink" ng-class="{'high-contrast': accessibilityModeEnabled}">
+  <!--// Top Icon -->
+  <a ng-if="::(options.link_template == 'Top Icon' || !options.link_template)" ng-href="{{::data.href}}" class="top_icon {{::options.class_name}}" target="{{::data.target}}">
+    <div class="m-b fa fa-{{::options.glyph}} fa-4x {{::options.class_name}} text-{{::options.color}}"></div>
+    <h2>{{::options.title}}</h2>
+    <span class="text-muted">{{::options.short_description}}</span>
+  </a>
+  
+  <!--// Image Icon -->
+  <a ng-if=”::(options.link_template == ‘Image Icon’)” ng-href=”{{::data.href}}” class=”image_icon {{::options.class_name}} text-{{::options.color}}” target=”{{::data.target}}”>
+    <div><img   src=”{{data.image}}” alt=”” align=”left” style=”margin-right: 7px; margin-left: auto; display: block;”/>
+    <h3 style=”font-weight: 300; margin-top: 22px”>{{::options.title}}</h3>
+    <span class=”text-muted”>{{::options.short_description}}</span></div>
+    <p>  </p>
+  </a>
+</div>]]></template>
+    </sp_widget>
+</record_update>

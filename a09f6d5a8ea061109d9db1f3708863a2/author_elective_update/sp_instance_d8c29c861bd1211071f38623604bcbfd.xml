@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">2b2f00c21bd1211071f38623604bcb9b</sp_column>
+        <sp_widget display_value="Topic Header">10e99777c38830105a09f0ad9840ddbd</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-01 21:53:39</sys_created_on>
+        <sys_id>d8c29c861bd1211071f38623604bcbfd</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sp_instance_d8c29c861bd1211071f38623604bcbfd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-01 21:56:37</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"include_description": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"primary_display": {
+		"value": "text_only",
+		"displayValue": "Text Only"
+	},
+	"secondary_display": {
+		"value": "text_only",
+		"displayValue": "Text Only"
+	},
+	"select_topics": {
+		"value": "ecc49ba7c3053010069aec4b7d40dd89",
+		"displayValue": "Phones and Mobility"
+	},
+	"banner_background_color": {
+		"value": "brand-primary",
+		"displayValue": "Brand Primary"
+	},
+	"banner_background_hexcode": {
+		"value": "ffffff",
+		"displayValue": "ffffff"
+	},
+	"banner_image_position": {
+		"value": "center center",
+		"displayValue": "Center Center"
+	},
+	"banner_image_display": {
+		"value": "cover",
+		"displayValue": "Scale to fit"
+	},
+	"banner_text_overlay_color": {
+		"value": "topic-header-gradient-dark",
+		"displayValue": "Overlay Dark"
+	},
+	"banner_text_overlay_transparency": {
+		"value": "0.5",
+		"displayValue": "0.5"
+	},
+	"icon_background_color": {
+		"value": "background-primary",
+		"displayValue": "Background Primary"
+	},
+	"icon_background_hexcode": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=d8c29c861bd1211071f38623604bcbfd"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="test">a09f6d5a8ea061109d9db1f3708863a2</application>
+        <file_path/>
+        <instance_id>8c468a791bd76050c8432f8dee4bcb39</instance_id>
+        <instance_name>dev110199</instance_name>
+        <name>sp_instance_d8c29c861bd1211071f38623604bcbfd</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;2b2f00c21bd1211071f38623604bcb9b&lt;/sp_column&gt;&lt;sp_widget display_value="Topic Header"&gt;10e99777c38830105a09f0ad9840ddbd&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-01 21:53:39&lt;/sys_created_on&gt;&lt;sys_id&gt;d8c29c861bd1211071f38623604bcbfd&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="test" source="x_968752_test"&gt;a09f6d5a8ea061109d9db1f3708863a2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="test"&gt;a09f6d5a8ea061109d9db1f3708863a2&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_d8c29c861bd1211071f38623604bcbfd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-01 21:56:37&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"include_description": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"primary_display": {
+		"value": "text_only",
+		"displayValue": "Text Only"
+	},
+	"secondary_display": {
+		"value": "text_only",
+		"displayValue": "Text Only"
+	},
+	"select_topics": {
+		"value": "ecc49ba7c3053010069aec4b7d40dd89",
+		"displayValue": "Phones and Mobility"
+	},
+	"banner_background_color": {
+		"value": "brand-primary",
+		"displayValue": "Brand Primary"
+	},
+	"banner_background_hexcode": {
+		"value": "ffffff",
+		"displayValue": "ffffff"
+	},
+	"banner_image_position": {
+		"value": "center center",
+		"displayValue": "Center Center"
+	},
+	"banner_image_display": {
+		"value": "cover",
+		"displayValue": "Scale to fit"
+	},
+	"banner_text_overlay_color": {
+		"value": "topic-header-gradient-dark",
+		"displayValue": "Overlay Dark"
+	},
+	"banner_text_overlay_transparency": {
+		"value": "0.5",
+		"displayValue": "0.5"
+	},
+	"icon_background_color": {
+		"value": "background-primary",
+		"displayValue": "Background Primary"
+	},
+	"icon_background_hexcode": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=d8c29c861bd1211071f38623604bcbfd"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1241426934</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>c4bf659a1ba0611071f38623604bcbf6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-01 21:56:38</sys_created_on>
+        <sys_id>ff63d0c61bd1211071f38623604bcb4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1869f2d674c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-01 21:56:38</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>3b63d0c6a0d1211099d5ffc756a87c4a</update_guid>
+        <update_guid_history>3b63d0c6a0d1211099d5ffc756a87c4a:1241426934,4f4350c640d1211058612e8a804e1b58:-793495626,1cf2dc86a6d121103cd0709488ea9faf:622044205,1ed2dc8694d121104fcdcfaf5634c91a:2136334618,d0c29c8624d12110221764af2d920bff:1218591701</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">1f731cc61bd1211071f38623604bcb58</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-01 21:56:51</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>3e476c77698941be9b1879d670a0f5e4</sys_id>
+        <sys_metadata>d8c29c861bd1211071f38623604bcbfd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_scope_delete display_value="">08b34a0a5d48448782ba6dc3e4b93701</sys_scope_delete>
+        <sys_update_name>sp_instance_d8c29c861bd1211071f38623604bcbfd</sys_update_name>
+        <sys_update_version display_value="sp_instance_d8c29c861bd1211071f38623604bcbfd">ff63d0c61bd1211071f38623604bcb4a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-01 21:56:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

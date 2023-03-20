@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="4">f57c5bb91be5291071f38623604bcb7e</sp_column>
+        <sp_widget display_value="HTML with CSS">9b6ef3801b65a11071f38623604bcb1f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-14 04:24:43</sys_created_on>
+        <sys_id>ca5fd37d1be5291071f38623604bcb52</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sp_instance_ca5fd37d1be5291071f38623604bcb52</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-14 04:27:47</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<p>What's New With MS Teams</p>\r\n<p>Check out the latest updates and features that MS Teams has to offer.</p>\r\n<p><a href=\"https://techcommunity.microsoft.com/t5/microsoft-teams-blog/what-s-new-in-microsoft-teams-january-2023/ba-p/3728104\">Latest news &gt;</a></p>",
+		"displayValue": "<p>What's New With MS Teams</p>\n<p>Check out the latest updates and features that MS Teams has to offer.</p>\n<p><a href=\"https://techcommunity.microsoft.com/t5/microsoft-teams-blog/what-s-new-in-microsoft-teams-january-2023/ba-p/3728104\">Latest news &gt;</a></p>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=ca5fd37d1be5291071f38623604bcb52"/>
+</record_update>

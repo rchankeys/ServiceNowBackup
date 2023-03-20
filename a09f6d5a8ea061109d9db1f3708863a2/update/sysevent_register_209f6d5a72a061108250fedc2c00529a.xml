@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <description>Change in state of document approval table</description>
+        <event_name>x_968752_test.notification_event</event_name>
+        <fired_by>Single Stage Approval Workflow for Document Approval</fired_by>
+        <queue/>
+        <suffix>notification_event</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-24 16:30:55</sys_created_on>
+        <sys_id>209f6d5a72a061108250fedc2c00529a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_968752_test.notification_event</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sysevent_register_209f6d5a72a061108250fedc2c00529a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-24 16:30:55</sys_updated_on>
+        <table/>
+    </sysevent_register>
+</record_update>

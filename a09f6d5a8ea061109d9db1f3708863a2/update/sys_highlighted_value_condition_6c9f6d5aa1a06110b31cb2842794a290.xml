@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_highlighted_value_condition">
+    <sys_highlighted_value_condition action="INSERT_OR_UPDATE">
+        <color/>
+        <conditions table="x_968752_test_document_approval">status=approved^EQ<item display_value="Approved" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="approved"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <highlighted_value display_value="status">609f6d5a08a06110add515f60d0e3c91</highlighted_value>
+        <icon/>
+        <order>10</order>
+        <show_icon>true</show_icon>
+        <status>positive</status>
+        <sys_class_name>sys_highlighted_value_condition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-24 16:30:38</sys_created_on>
+        <sys_id>6c9f6d5aa1a06110b31cb2842794a290</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sys_highlighted_value_condition_6c9f6d5aa1a06110b31cb2842794a290</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-24 16:30:38</sys_updated_on>
+        <value_override/>
+        <variant/>
+    </sys_highlighted_value_condition>
+</record_update>

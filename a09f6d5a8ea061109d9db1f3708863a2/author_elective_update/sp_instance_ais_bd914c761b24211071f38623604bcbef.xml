@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_ais">
+    <sp_instance_ais action="DELETE">
+        <active>true</active>
+        <ai_search_source_filter/>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <disable_all_suggestions>false</disable_all_suggestions>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <placeholder/>
+        <roles/>
+        <search_application display_value="[AI Search Assist] - Incident Deflection">2056f9de67621010b3d782f45685efd0</search_application>
+        <search_results_configuration display_value="ESC Portal Search">9264a1c353571010069addeeff7b121e</search_results_configuration>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">ef208c7e1be0211071f38623604bcb16</sp_column>
+        <sp_widget display_value="Homepage Search">200fbd96cb20020000f8d856634c9ca1</sp_widget>
+        <spell_check_font_size>xl</spell_check_font_size>
+        <sys_class_name>sp_instance_ais</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-25 21:47:00</sys_created_on>
+        <sys_id>bd914c761b24211071f38623604bcbef</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>How can we help?</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sp_instance_ais_bd914c761b24211071f38623604bcbef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-13 19:40:43</sys_updated_on>
+        <title>How can we help?</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"typeahead_search": {
+		"value": "{title:'Search Knowledge Articles...'}",
+		"displayValue": "{title:'Search Knowledge Articles...'}"
+	}
+}]]></widget_parameters>
+    </sp_instance_ais>
+    <sys_translated_text action="DELETE" query="documentkey=bd914c761b24211071f38623604bcbef"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="test">a09f6d5a8ea061109d9db1f3708863a2</application>
+        <file_path/>
+        <instance_id>8c468a791bd76050c8432f8dee4bcb39</instance_id>
+        <instance_name>dev110199</instance_name>
+        <name>sp_instance_ais_bd914c761b24211071f38623604bcbef</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_ais"&gt;&lt;sp_instance_ais action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;ai_search_source_filter/&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;disable_all_suggestions&gt;false&lt;/disable_all_suggestions&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;placeholder/&gt;&lt;roles/&gt;&lt;search_application display_value="[AI Search Assist] - Incident Deflection"&gt;2056f9de67621010b3d782f45685efd0&lt;/search_application&gt;&lt;search_results_configuration display_value="ESC Portal Search"&gt;9264a1c353571010069addeeff7b121e&lt;/search_results_configuration&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;ef208c7e1be0211071f38623604bcb16&lt;/sp_column&gt;&lt;sp_widget display_value="Homepage Search"&gt;200fbd96cb20020000f8d856634c9ca1&lt;/sp_widget&gt;&lt;spell_check_font_size&gt;xl&lt;/spell_check_font_size&gt;&lt;sys_class_name&gt;sp_instance_ais&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-01-25 21:47:00&lt;/sys_created_on&gt;&lt;sys_id&gt;bd914c761b24211071f38623604bcbef&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;How can we help?&lt;/sys_name&gt;&lt;sys_package display_value="test" source="x_968752_test"&gt;a09f6d5a8ea061109d9db1f3708863a2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="test"&gt;a09f6d5a8ea061109d9db1f3708863a2&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_ais_bd914c761b24211071f38623604bcbef&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-02-13 19:40:43&lt;/sys_updated_on&gt;&lt;title&gt;How can we help?&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"typeahead_search": {
+		"value": "{title:'Search Knowledge Articles...'}",
+		"displayValue": "{title:'Search Knowledge Articles...'}"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_ais&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=bd914c761b24211071f38623604bcbef"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>681811989</payload_hash>
+        <record_name>How can we help?</record_name>
+        <reverted_from/>
+        <source>c4bf659a1ba0611071f38623604bcbf6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-13 19:40:43</sys_created_on>
+        <sys_id>51ea1dbc1bc5e11071f38623604bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1864c4b39c10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-13 19:40:43</sys_updated_on>
+        <type>Instance with Search</type>
+        <update_guid>99ea1dbc65c5e110723441d1f828706e</update_guid>
+        <update_guid_history>99ea1dbc65c5e110723441d1f828706e:681811989,37da59bc14c5e1106c2cb756292c31e3:1754880874,a1bad530f609e110089968a5d1250d11:681811989,050a487e02242110fb1777ed6f629126:156043432,67898c3ada242110f859d7b070400fee:-438457337,b1f140b693242110dca9084376cc013d:156043432,75914c7606242110ed56cebe98450ef1:217476868</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="How can we help?">803bd5301b09e11071f38623604bcb70</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-13 19:42:01</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_ais">sp_instance_ais</sys_db_object>
+        <sys_id>0532987ce8f04edba9550dcd7f22bf51</sys_id>
+        <sys_metadata>bd914c761b24211071f38623604bcbef</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>How can we help?</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_scope_delete display_value="">08b34a0a5d48448782ba6dc3e4b93701</sys_scope_delete>
+        <sys_update_name>sp_instance_ais_bd914c761b24211071f38623604bcbef</sys_update_name>
+        <sys_update_version display_value="sp_instance_ais_bd914c761b24211071f38623604bcbef">51ea1dbc1bc5e11071f38623604bcb6f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-13 19:42:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

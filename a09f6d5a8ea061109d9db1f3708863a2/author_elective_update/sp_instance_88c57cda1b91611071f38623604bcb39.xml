@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">1a70645e1b51611071f38623604bcb52</sp_column>
+        <sp_widget display_value="Related Catalog Item">806f40990fab2300b7b2c8337a767e6f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-02 19:05:02</sys_created_on>
+        <sys_id>88c57cda1b91611071f38623604bcb39</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Related Catalog Items</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sp_instance_88c57cda1b91611071f38623604bcb39</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-02 19:11:49</sys_updated_on>
+        <title>Related Catalog Items</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"source_table": {
+		"value": "sc_2_sc",
+		"displayValue": "sc_2_sc"
+	},
+	"source_column": {
+		"value": "sc_cat_item",
+		"displayValue": "sc_cat_item"
+	},
+	"target_column": {
+		"value": "related_sc_cat_item",
+		"displayValue": "related_sc_cat_item"
+	},
+	"title": {
+		"value": "Related Catalog Items",
+		"displayValue": "Related Catalog Items"
+	},
+	"max_number": {
+		"value": 4,
+		"displayValue": "4"
+	},
+	"source_id": {
+		"value": "",
+		"displayValue": ""
+	},
+	"use_full_width": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=88c57cda1b91611071f38623604bcb39"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="test">a09f6d5a8ea061109d9db1f3708863a2</application>
+        <file_path/>
+        <instance_id>8c468a791bd76050c8432f8dee4bcb39</instance_id>
+        <instance_name>dev110199</instance_name>
+        <name>sp_instance_88c57cda1b91611071f38623604bcb39</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="2"&gt;1a70645e1b51611071f38623604bcb52&lt;/sp_column&gt;&lt;sp_widget display_value="Related Catalog Item"&gt;806f40990fab2300b7b2c8337a767e6f&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-02 19:05:02&lt;/sys_created_on&gt;&lt;sys_id&gt;88c57cda1b91611071f38623604bcb39&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Related Catalog Items&lt;/sys_name&gt;&lt;sys_package display_value="test" source="x_968752_test"&gt;a09f6d5a8ea061109d9db1f3708863a2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="test"&gt;a09f6d5a8ea061109d9db1f3708863a2&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_88c57cda1b91611071f38623604bcb39&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-02 19:11:49&lt;/sys_updated_on&gt;&lt;title&gt;Related Catalog Items&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"source_table": {
+		"value": "sc_2_sc",
+		"displayValue": "sc_2_sc"
+	},
+	"source_column": {
+		"value": "sc_cat_item",
+		"displayValue": "sc_cat_item"
+	},
+	"target_column": {
+		"value": "related_sc_cat_item",
+		"displayValue": "related_sc_cat_item"
+	},
+	"title": {
+		"value": "Related Catalog Items",
+		"displayValue": "Related Catalog Items"
+	},
+	"max_number": {
+		"value": 4,
+		"displayValue": "4"
+	},
+	"source_id": {
+		"value": "",
+		"displayValue": ""
+	},
+	"use_full_width": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=88c57cda1b91611071f38623604bcb39"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1876273976</payload_hash>
+        <record_name>Related Catalog Items</record_name>
+        <reverted_from/>
+        <source>c4bf659a1ba0611071f38623604bcbf6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-02 19:11:50</sys_created_on>
+        <sys_id>ef47fcde1bd1611071f38623604bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186a3bce10b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-02 19:11:50</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>2b47fcdeedd1611083958a374ee197d4</update_guid>
+        <update_guid_history>2b47fcdeedd1611083958a374ee197d4:-1876273976,2a06309e0ed1611062a84e4db4f20aa1:527889138,8cc5b49e54d161102a0ae430cab5fa07:-1868407861</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Related Catalog Items">61773cde1bd1611071f38623604bcbd0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-02 19:12:30</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>03d3961568da49c0802f4d3927249900</sys_id>
+        <sys_metadata>88c57cda1b91611071f38623604bcb39</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Related Catalog Items</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_scope_delete display_value="">08b34a0a5d48448782ba6dc3e4b93701</sys_scope_delete>
+        <sys_update_name>sp_instance_88c57cda1b91611071f38623604bcb39</sys_update_name>
+        <sys_update_version display_value="sp_instance_88c57cda1b91611071f38623604bcb39">ef47fcde1bd1611071f38623604bcbd4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-02 19:12:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

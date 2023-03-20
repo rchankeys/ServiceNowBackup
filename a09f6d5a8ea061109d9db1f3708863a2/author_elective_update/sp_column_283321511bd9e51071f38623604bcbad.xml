@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>3</order>
+        <size>3</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">6c3369111bd9e51071f38623604bcbe6</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-27 19:49:40</sys_created_on>
+        <sys_id>283321511bd9e51071f38623604bcbad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sp_column_283321511bd9e51071f38623604bcbad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-27 19:49:40</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="test">a09f6d5a8ea061109d9db1f3708863a2</application>
+        <file_path/>
+        <instance_id>8c468a791bd76050c8432f8dee4bcb39</instance_id>
+        <instance_name>dev110199</instance_name>
+        <name>sp_column_283321511bd9e51071f38623604bcbad</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>3</order><size>3</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">6c3369111bd9e51071f38623604bcbe6</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-27 19:49:40</sys_created_on><sys_id>283321511bd9e51071f38623604bcbad</sys_id><sys_mod_count>0</sys_mod_count><sys_name>3</sys_name><sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package><sys_policy/><sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope><sys_update_name>sp_column_283321511bd9e51071f38623604bcbad</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-27 19:49:40</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>-1139887475</payload_hash>
+        <record_name>3</record_name>
+        <reverted_from/>
+        <source>c4bf659a1ba0611071f38623604bcbf6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-27 19:49:40</sys_created_on>
+        <sys_id>2c3321511bd9e51071f38623604bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186946c71610000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-27 19:49:40</sys_updated_on>
+        <type>Column</type>
+        <update_guid>64332151bdd9e510d0d782966db70bae</update_guid>
+        <update_guid_history>64332151bdd9e510d0d782966db70bae:-1139887475</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="3">6345a5511bd9e51071f38623604bcb53</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-27 19:58:52</sys_created_on>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>4348f220e72c4c578c6e9bedee0d3ec9</sys_id>
+        <sys_metadata>283321511bd9e51071f38623604bcbad</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_scope_delete display_value="">08b34a0a5d48448782ba6dc3e4b93701</sys_scope_delete>
+        <sys_update_name>sp_column_283321511bd9e51071f38623604bcbad</sys_update_name>
+        <sys_update_version display_value="sp_column_283321511bd9e51071f38623604bcbad">2c3321511bd9e51071f38623604bcbae</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-27 19:58:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

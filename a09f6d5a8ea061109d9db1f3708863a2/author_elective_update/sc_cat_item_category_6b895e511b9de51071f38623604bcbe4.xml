@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Request Windows 10 Permanent Admin Exception">2b07ce111b5de51071f38623604bcbd3</sc_cat_item>
+        <sc_category display_value="Hardware and Software">1561e32b1b4d611071f38623604bcb21</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-27 23:47:10</sys_created_on>
+        <sys_id>6b895e511b9de51071f38623604bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hardware and Software.Request Windows 10 Permanent Admin Exception</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sc_cat_item_category_6b895e511b9de51071f38623604bcbe4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-27 23:47:10</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="test">a09f6d5a8ea061109d9db1f3708863a2</application>
+        <file_path/>
+        <instance_id>8c468a791bd76050c8432f8dee4bcb39</instance_id>
+        <instance_name>dev110199</instance_name>
+        <name>sc_cat_item_category_6b895e511b9de51071f38623604bcbe4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Request Windows 10 Permanent Admin Exception">2b07ce111b5de51071f38623604bcbd3</sc_cat_item><sc_category display_value="Hardware and Software">1561e32b1b4d611071f38623604bcb21</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-27 23:47:10</sys_created_on><sys_id>6b895e511b9de51071f38623604bcbe4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Hardware and Software.Request Windows 10 Permanent Admin Exception</sys_name><sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package><sys_policy/><sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope><sys_update_name>sc_cat_item_category_6b895e511b9de51071f38623604bcbe4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-27 23:47:10</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1764095238</payload_hash>
+        <record_name>Hardware and Software.Request Windows 10 Permanent Admin Exception</record_name>
+        <reverted_from/>
+        <source>c4bf659a1ba0611071f38623604bcbf6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-27 23:47:10</sys_created_on>
+        <sys_id>ab895e511b9de51071f38623604bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1869545e2940000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-27 23:47:10</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>23895e51e09de510adda831f68bbdbf4</update_guid>
+        <update_guid_history>23895e51e09de510adda831f68bbdbf4:1764095238</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Hardware and Software.Request Windows 10 Permanent Admin Exception">9ec952911b9de51071f38623604bcbb4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-27 23:48:10</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>319963810c5241fc972203de288abe59</sys_id>
+        <sys_metadata>6b895e511b9de51071f38623604bcbe4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hardware and Software.Request Windows 10 Permanent Admin Exception</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_scope_delete display_value="">08b34a0a5d48448782ba6dc3e4b93701</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_6b895e511b9de51071f38623604bcbe4</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_6b895e511b9de51071f38623604bcbe4">ab895e511b9de51071f38623604bcbf4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-27 23:48:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
