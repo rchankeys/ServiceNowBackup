@@ -10,32 +10,23 @@
         <roles/>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="1">114344b61b24211071f38623604bcb39</sp_column>
-        <sp_widget display_value="KB Most Viewed">7d903b52cb30020000f8d856634c9ce3</sp_widget>
+        <sp_column display_value="2">c4ff50c51b86211071f38623604bcbd6</sp_column>
+        <sp_widget display_value="HTML with CSS">9b6ef3801b65a11071f38623604bcb1f</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-01-25 22:01:32</sys_created_on>
-        <sys_id>eae4007a1b24211071f38623604bcb8c</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_created_on>2023-04-05 04:06:18</sys_created_on>
+        <sys_id>621e20051bc6211071f38623604bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
         <sys_policy/>
         <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
-        <sys_update_name>sp_instance_eae4007a1b24211071f38623604bcb8c</sys_update_name>
+        <sys_update_name>sp_instance_621e20051bc6211071f38623604bcbf7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-03 15:39:16</sys_updated_on>
+        <sys_updated_on>2023-04-05 04:06:18</sys_updated_on>
         <title/>
         <url/>
-        <widget_parameters><![CDATA[{
-	"max_number": {
-		"value": null,
-		"displayValue": ""
-	},
-	"kb_category": {
-		"value": "",
-		"displayValue": ""
-	}
-}]]></widget_parameters>
+        <widget_parameters/>
     </sp_instance>
-    <sys_translated_text action="delete_multiple" query="documentkey=eae4007a1b24211071f38623604bcb8c"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=621e20051bc6211071f38623604bcbf7"/>
 </record_update>

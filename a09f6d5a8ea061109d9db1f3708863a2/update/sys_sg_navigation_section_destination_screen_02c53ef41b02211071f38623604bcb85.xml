@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_navigation_section_destination_screen">
+    <sys_sg_navigation_section_destination_screen action="INSERT_OR_UPDATE">
+        <applet display_value="Browse Catalog">8e7a221387530010e0ef0cf888cb0bc9</applet>
+        <background_color/>
+        <foreground_color/>
+        <icon/>
+        <image display_value="Microsoft Outlook">bda43eb41b02211071f38623604bcb06</image>
+        <name>Microsoft Outlook</name>
+        <sys_class_name>sys_sg_navigation_section_destination_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-04 19:22:33</sys_created_on>
+        <sys_id>02c53ef41b02211071f38623604bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Microsoft Outlook</sys_name>
+        <sys_package display_value="test" source="x_968752_test">a09f6d5a8ea061109d9db1f3708863a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test">a09f6d5a8ea061109d9db1f3708863a2</sys_scope>
+        <sys_update_name>sys_sg_navigation_section_destination_screen_02c53ef41b02211071f38623604bcb85</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-04 19:22:33</sys_updated_on>
+    </sys_sg_navigation_section_destination_screen>
+</record_update>
